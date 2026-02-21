@@ -1,7 +1,15 @@
 import { motion, AnimatePresence } from 'framer-motion'
 import { X } from 'lucide-react'
 
-export default function AboutMePopup({ isAboutOpen, setIsAboutOpen }) {
+interface AboutMePopupProps {
+  isAboutOpen: boolean
+  setIsAboutOpen: (open: boolean) => void
+}
+
+export default function AboutMePopup({
+  isAboutOpen,
+  setIsAboutOpen,
+}: AboutMePopupProps) {
   const TECH_STACK = [
     { name: 'HTML5', slug: 'html5', link: '' },
     { name: 'CSS3', slug: 'css', link: '' },

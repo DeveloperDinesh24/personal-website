@@ -10,7 +10,11 @@ import {
 } from 'lucide-react'
 import { motion } from 'framer-motion'
 
-export default function HeroSection({ setIsAboutOpen }) {
+interface HeroSectionProps {
+  setIsAboutOpen: (isOpen: boolean) => void
+}
+
+export default function HeroSection({ setIsAboutOpen }: HeroSectionProps) {
   return (
     <section
       id='home'

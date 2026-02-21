@@ -1,4 +1,8 @@
-export default function Header({ setIsAboutOpen }) {
+interface HeaderProps {
+  setIsAboutOpen: (isOpen: boolean) => void
+}
+
+export default function Header({ setIsAboutOpen }: HeaderProps) {
   return (
     <nav className="fixed top-0 w-full z-40 bg-slate-950/80 backdrop-blur-md border-b border-white/5 py-4 font-['Kite_One']">
       <div className='max-w-7xl mx-auto px-6 flex justify-between items-center'>
