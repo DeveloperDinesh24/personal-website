@@ -6,6 +6,7 @@ import HeroSection from './components/HeroSection'
 import ProjectsSection from './components/ProjectsSection'
 import ContactSection from './components/ContactSection'
 import Footer from './components/Footer'
+import AboutMePopup from './components/AboutMePopup'
 
 function App() {
   const [isAboutOpen, setIsAboutOpen] = useState(false)
@@ -16,6 +17,8 @@ function App() {
       <ProjectsSection />
       <ContactSection />
       <Footer />
+
+      <AboutMePopup isAboutOpen={isAboutOpen} setIsAboutOpen={setIsAboutOpen} />
     </div>
   )
 }
