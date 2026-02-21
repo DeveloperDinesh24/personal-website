@@ -4,6 +4,7 @@ import { useState } from 'react'
 import Header from './components/Header'
 import HeroSection from './components/HeroSection'
 import ProjectsSection from './components/ProjectsSection'
+import ContactSection from './components/ContactSection'
 
 function App() {
   const [isAboutOpen, setIsAboutOpen] = useState(false)
@@ -12,6 +13,7 @@ function App() {
       <Header setIsAboutOpen={setIsAboutOpen} />
       <HeroSection setIsAboutOpen={setIsAboutOpen} />
       <ProjectsSection />
+      <ContactSection />
     </div>
   )
 }
