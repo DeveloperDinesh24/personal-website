@@ -4,7 +4,6 @@ import {
   Instagram,
   Mail,
   ChevronRight,
-  ArrowUp,
   ArrowDown,
   Twitter,
 } from 'lucide-react'
