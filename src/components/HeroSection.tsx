@@ -20,32 +20,32 @@ export default function HeroSection({ setIsAboutOpen }: HeroSectionProps) {
       className='min-h-dvh max-w-7xl mx-auto flex items-center md:gap-14 lg:gap-28 xl:gap-42 relative px-6'
     >
       <div className='max-[438px]:hidden flex flex-col gap-6 text-slate-500'>
-        <a
-          href='#'
+        <a target='_blank'
+          href='https://www.instagram.com/devloperdinesh'
           className='hover:text-indigo-500 transition-transform hover:-translate-y-1'
         >
           <Instagram size={25} />
         </a>
-        <a
-          href='#'
+        <a target='_blank'
+          href='https://www.linkedin.com/in/dinesh-singh-chauhan-a2b39933b/'
           className='hover:text-indigo-500 transition-transform hover:-translate-y-1'
         >
           <Linkedin size={25} />
         </a>
-        <a
-          href='#'
+        <a target='_blank'
+          href='https://x.com/Dinesh_676'
           className='hover:text-indigo-500 transition-transform hover:-translate-y-1'
         >
           <Twitter size={25} />
         </a>
-        <a
-          href='#'
+        <a target='_blank'
+          href='https://github.com/DeveloperDinesh24/'
           className='hover:text-indigo-500 transition-transform hover:-translate-y-1'
         >
           <Github size={25} />
         </a>
-        <a
-          href='#'
+        <a target='_blank'
+          href='mailto:1442dinesh6singh5@gmail.com'
           className='hover:text-indigo-500 transition-transform hover:-translate-y-1'
         >
           <Mail size={25} />

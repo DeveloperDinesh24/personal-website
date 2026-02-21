@@ -21,32 +21,32 @@ export default function Footer() {
         </div>
 
         <div className='flex items-center gap-6 text-slate-400'>
-          <a
-            href='#'
+          <a target='_blank'
+            href='https://www.instagram.com/devloperdinesh'
             className='hover:text-indigo-500 transition-all hover:scale-110'
           >
             <Instagram size={20} />
           </a>
-          <a
-            href='#'
+          <a target='_blank'
+            href='https://www.linkedin.com/in/dinesh-singh-chauhan-a2b39933b/'
             className='hover:text-indigo-500 transition-all hover:scale-110'
           >
             <Linkedin size={20} />
           </a>
-          <a
-            href='#'
+          <a target='_blank'
+            href='https://x.com/Dinesh_676'
             className='hover:text-indigo-500 transition-all hover:scale-110'
           >
             <Twitter size={20} />
           </a>
-          <a
-            href='#'
+          <a target='_blank'
+            href='https://github.com/DeveloperDinesh24/'
             className='hover:text-indigo-500 transition-all hover:scale-110'
           >
             <Github size={20} />
           </a>
-          <a
-            href='#'
+          <a target='_blank'
+            href='mailto:1442dinesh6singh5@gmail.com'
             className='hover:text-indigo-500 transition-all hover:scale-110'
           >
             <Mail size={20} />
