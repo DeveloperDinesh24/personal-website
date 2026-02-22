@@ -12,7 +12,7 @@ export default function Footer() {
     <footer className='py-6 border-t border-white/5 bg-slate-950 px-6'>
       <div className='max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-10'>
         <div className='flex flex-col items-center md:items-start gap-2'>
-          <span className="text-2xl font-black text-white font-['Nunito_Sans'] uppercase tracking-tighter">
+          <span className="text-2xl font-black text-white font-['Nunito_Sans'] uppercase ">
             Dinesh
           </span>
           <p className="text-[10px] text-slate-500 font-['Kite_One'] uppercase tracking-[0.3em]">
