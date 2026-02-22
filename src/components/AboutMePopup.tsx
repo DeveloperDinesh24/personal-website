@@ -11,17 +11,17 @@ export default function AboutMePopup({
   setIsAboutOpen,
 }: AboutMePopupProps) {
   const TECH_STACK = [
-    { name: 'HTML5', slug: 'html5', link: '' },
-    { name: 'CSS3', slug: 'css', link: '' },
-    { name: 'JavaScript', slug: 'javascript', link: '' },
-    { name: 'TypeScript', slug: 'typescript', link: '' },
-    { name: 'React.js', slug: 'react', link: '' },
-    { name: 'TailwindCSS', slug: 'tailwindcss', link: '' },
-    { name: 'Git', slug: 'git', link: '' },
-    { name: 'GitHub', slug: 'github', link: '' },
-    { name: 'Netlify', slug: 'netlify', link: '' },
-    { name: 'Vercel', slug: 'vercel', link: '' },
-    { name: 'Context API', slug: 'react', link: '' },
+    { name: 'HTML5', slug: 'html5', link: 'https://en.wikipedia.org/wiki/HTML5' },
+    { name: 'CSS3', slug: 'css', link: 'https://en.wikipedia.org/wiki/CSS' },
+    { name: 'JavaScript', slug: 'javascript', link: 'https://en.wikipedia.org/wiki/JavaScript' },
+    { name: 'TypeScript', slug: 'typescript', link: 'https://en.wikipedia.org/wiki/TypeScript' },
+    { name: 'React.js', slug: 'react', link: 'https://react.dev/' },
+    { name: 'TailwindCSS', slug: 'tailwindcss', link: 'https://tailwindcss.com/' },
+    { name: 'Git', slug: 'git', link: 'https://en.wikipedia.org/wiki/Git' },
+    { name: 'GitHub', slug: 'github', link: 'https://github.com/' },
+    { name: 'Netlify', slug: 'netlify', link: 'https://www.netlify.com/' },
+    { name: 'Vercel', slug: 'vercel', link: 'https://vercel.com' },
+    { name: 'Context API', slug: 'react', link: 'https://legacy.reactjs.org/docs/context.html' },
   ]
 
   return (
@@ -67,6 +67,7 @@ export default function AboutMePopup({
                   whileHover={{ scale: 1.05, translateY: -5 }}
                   key={tech.name}
                   href={tech.link}
+                  target='_blank'
                   className='p-4 bg-white/5 rounded-2xl border border-white/5 flex flex-col items-center gap-3 text-center'
                 >
                   <img
