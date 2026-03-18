@@ -1,5 +1,6 @@
 import { ExternalLink } from 'lucide-react'
 
+import devtrackThumbnail from '../assets/devtrack-thumbnail.png'
 import theShoeCompanyThumbnail from '../assets/the-shoe-company-thumbnail.png'
 import yogaStudioThumbnail from '../assets/yoga-studio-thumbnail.png'
 import cafeThumbnail from '../assets/xyz-cafe-thumbnail.png'
@@ -8,20 +9,27 @@ export default function ProjectsSection() {
   const PROJECTS = [
     {
       id: 1,
-      name: 'The Shoe Company',
-      img: theShoeCompanyThumbnail,
-      liveLink: 'https://dinesh-the-shoe-company.netlify.app/',
-      codeLink: 'https://github.com/DeveloperDinesh24/the-shoe-company',
+      name: 'DevTrack.io',
+      img: devtrackThumbnail,
+      liveLink: 'https://dinesh-devtrack.vercel.app/',
+      codeLink: 'https://github.com/DeveloperDinesh24/job-application-tracker',
     },
     {
       id: 2,
+      name: 'The Shoe Company',
+      img: theShoeCompanyThumbnail,
+      liveLink: 'https://dinesh-the-shoe-company.vercel.app/',
+      codeLink: 'https://github.com/DeveloperDinesh24/the-shoe-company',
+    },
+    {
+      id: 3,
       name: 'Yoga Studio',
       img: yogaStudioThumbnail,
       liveLink: 'https://yoga-studio-website-kappa.vercel.app/',
       codeLink: 'https://github.com/DeveloperDinesh24/yoga-studio-website',
     },
     {
-      id: 3,
+      id: 4,
       name: 'XYZ Cafe',
       img: cafeThumbnail,
       liveLink: 'https://dinesh-xyz-cafe.vercel.app/',
