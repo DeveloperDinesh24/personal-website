@@ -11,17 +11,57 @@ export default function AboutMePopup({
   setIsAboutOpen,
 }: AboutMePopupProps) {
   const TECH_STACK = [
-    { name: 'HTML5', slug: 'html5', link: 'https://en.wikipedia.org/wiki/HTML5' },
-    { name: 'CSS3', slug: 'css', link: 'https://en.wikipedia.org/wiki/CSS' },
-    { name: 'JavaScript', slug: 'javascript', link: 'https://en.wikipedia.org/wiki/JavaScript' },
-    { name: 'TypeScript', slug: 'typescript', link: 'https://en.wikipedia.org/wiki/TypeScript' },
+    // Core
     { name: 'React.js', slug: 'react', link: 'https://react.dev/' },
-    { name: 'TailwindCSS', slug: 'tailwindcss', link: 'https://tailwindcss.com/' },
-    { name: 'Git', slug: 'git', link: 'https://en.wikipedia.org/wiki/Git' },
+    {
+      name: 'TypeScript',
+      slug: 'typescript',
+      link: 'https://www.typescriptlang.org/',
+    },
+    {
+      name: 'JavaScript',
+      slug: 'javascript',
+      link: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript',
+    },
+
+    // Styling
+    {
+      name: 'TailwindCSS',
+      slug: 'tailwindcss',
+      link: 'https://tailwindcss.com/',
+    },
+
+    // State & Data
+    {
+      name: 'TanStack Query',
+      slug: 'reactquery',
+      link: 'https://tanstack.com/query/latest',
+    },
+    { name: 'Zustand', slug: 'zustand', link: 'https://zustand-demo.pmnd.rs/' },
+    {
+      name: 'React Router',
+      slug: 'reactrouter',
+      link: 'https://reactrouter.com/',
+    },
+
+    // Foundations
+    {
+      name: 'HTML5',
+      slug: 'html5',
+      link: 'https://developer.mozilla.org/en-US/docs/Glossary/HTML5',
+    },
+    {
+      name: 'CSS3',
+      slug: 'css',
+      link: 'https://developer.mozilla.org/en-US/docs/Web/CSS',
+    },
+
+    // Backend & Tools
+    { name: 'Supabase', slug: 'supabase', link: 'https://supabase.com/' },
+    { name: 'Git', slug: 'git', link: 'https://git-scm.com/' },
     { name: 'GitHub', slug: 'github', link: 'https://github.com/' },
+    { name: 'Vercel', slug: 'vercel', link: 'https://vercel.com/' },
     { name: 'Netlify', slug: 'netlify', link: 'https://www.netlify.com/' },
-    { name: 'Vercel', slug: 'vercel', link: 'https://vercel.com' },
-    { name: 'Context API', slug: 'react', link: 'https://legacy.reactjs.org/docs/context.html' },
   ]
 
   return (
@@ -71,7 +111,11 @@ export default function AboutMePopup({
                   className='p-4 bg-white/5 rounded-2xl border border-white/5 flex flex-col items-center gap-3 text-center'
                 >
                   <img
-                    src={`https://cdn.simpleicons.org/${tech.slug}/6366f1`}
+                    src={
+                      tech.slug === 'zustand'
+                        ? 'src\\assets\\zustand.svg'
+                        : `https://cdn.simpleicons.org/${tech.slug}/6366f1`
+                    }
                     className='w-8 h-8'
                     alt={tech.name}
                   />
