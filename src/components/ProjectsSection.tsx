@@ -1,6 +1,7 @@
 import { ExternalLink } from 'lucide-react'
 
 import devtrackThumbnail from '../assets/devtrack-thumbnail.png'
+import authSystemThumbnail from '../assets/auth-system-thumbnail.png'
 import theShoeCompanyThumbnail from '../assets/the-shoe-company-thumbnail.png'
 import yogaStudioThumbnail from '../assets/yoga-studio-thumbnail.png'
 import cafeThumbnail from '../assets/xyz-cafe-thumbnail.png'
@@ -16,24 +17,31 @@ export default function ProjectsSection() {
     },
     {
       id: 2,
+      name: 'Auth System',
+      img: authSystemThumbnail,
+      liveLink: 'https://dinesh-auth-sys.vercel.app/',
+      codeLink: 'https://github.com/developerDinesh24/auth-sys',
+    },
+    {
+      id: 3,
+      name: 'XYZ Cafe',
+      img: cafeThumbnail,
+      liveLink: 'https://dinesh-xyz-cafe.vercel.app/',
+      codeLink: 'https://github.com/developerDinesh24/xyz-cafe',
+    },
+    {
+      id: 4,
       name: 'The Shoe Company',
       img: theShoeCompanyThumbnail,
       liveLink: 'https://dinesh-the-shoe-company.vercel.app/',
       codeLink: 'https://github.com/DeveloperDinesh24/the-shoe-company',
     },
     {
-      id: 3,
+      id: 5,
       name: 'Yoga Studio',
       img: yogaStudioThumbnail,
       liveLink: 'https://yoga-studio-website-kappa.vercel.app/',
       codeLink: 'https://github.com/DeveloperDinesh24/yoga-studio-website',
-    },
-    {
-      id: 4,
-      name: 'XYZ Cafe',
-      img: cafeThumbnail,
-      liveLink: 'https://dinesh-xyz-cafe.vercel.app/',
-      codeLink: 'https://github.com/developerDinesh24/xyz-cafe',
     },
   ]
 
