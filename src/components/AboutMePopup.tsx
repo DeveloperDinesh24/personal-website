@@ -12,6 +12,11 @@ export default function AboutMePopup({
 }: AboutMePopupProps) {
   const TECH_STACK = [
     // Core
+    {
+      name: 'Next.js',
+      slug: 'nextdotjs',
+      link: 'https://nextjs.org/',
+    },
     { name: 'React.js', slug: 'react', link: 'https://react.dev/' },
     {
       name: 'TypeScript',
